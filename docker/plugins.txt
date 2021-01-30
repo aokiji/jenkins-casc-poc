@@ -1,0 +1,8 @@
+configuration-as-code
+git
+role-strategy
+job-dsl
+rebuild
+workflow-job
+workflow-cps
+workflow-aggregator

@@ -1,0 +1,21 @@
+version: '3'
+services:
+  jenkins:
+    build:
+      dockerfile: Dockerfile
+      context: docker
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - "jenkins_home:/var/jenkins_home"
+      - "./config:/etc/jenkins/config:ro"
+    environment:
+      CASC_JENKINS_CONFIG: /etc/jenkins/config/jcasc/
+    ulimits:
+      nofile:
+        soft: 122880
+        hard: 122880
+
+volumes:
+  jenkins_home:
