@@ -16,6 +16,19 @@ services:
       nofile:
         soft: 122880
         hard: 122880
+  agent1:
+    image: jenkins/inbound-agent
+    entrypoint: bash /usr/local/bin/wait-for-jenkins.sh /usr/local/bin/jenkins-agent
+    volumes:
+      - "./docker/wait-for-jenkins.sh:/usr/local/bin/wait-for-jenkins.sh"
+      - "agent1-workdir:/home/jenkins/agent"
+    environment:
+      JENKINS_URL: 'http://jenkins:8080'
+      JENKINS_SECRET: "@/tmp/secret"
+      JENKINS_AGENT_NAME: agent1
+    depends_on:
+      - jenkins
 
 volumes:
   jenkins_home:
+  agent1-workdir:

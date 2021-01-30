@@ -1,0 +1,13 @@
+jenkins:
+  nodes:
+    - permanent:
+        name: agent1
+        labelString: linux
+        remoteFS: /home/jenkins
+        launcher:
+          jnlp:
+            workDirSettings:
+              disabled: true
+              failIfWorkDirIsMissing: false
+              internalDir: "remoting"
+              workDirPath: "/tmp"
