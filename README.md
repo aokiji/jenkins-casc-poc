@@ -43,3 +43,4 @@ When starting jenkins the seed job is automatically launched as defined in [seed
 * [Jenkins Configuration as Code Documentation](https://github.com/jenkinsci/configuration-as-code-plugin/blob/master/README.md)
 * [Jenkinsfile Documentation](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
 * [Jenkins Configuration as Code local reference](http://localhost:8080/configuration-as-code/reference)
+* [Groovy Language Reference](http://docs.groovy-lang.org/latest/html/documentation/#_groovy_language_specification)
