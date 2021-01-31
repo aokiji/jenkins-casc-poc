@@ -31,9 +31,15 @@ The directory [config/jcasc](./config/jcasc) contains several file configuring d
 
 These files are added to jenkins server container at `/etc/jenkins/config/jcasc/` as set by `CASC_JENKINS_CONFIG` environment variable
 
+## Jobs
+
+Jobs are loaded through a seed job defined in [jobs.yaml](./config/jobs.yaml) that dynamically generates all other jobs. These jobs are defined in [jobs folder](./config/jobs) in a series of groovy scripts
+
+When starting jenkins the seed job is automatically launched as defined in [seed.groovy](./docker/init.groovy.d/seed.groovy)
+
 # Resources
 
-* [Jenkins DSL Documentation](https://jenkinsci.github.io/job-dsl-plugin/)
+* [Jenkins Jobs DSL API Reference](http://localhost:8080/plugin/job-dsl/api-viewer/index.html)
 * [Jenkins Configuration as Code Documentation](https://github.com/jenkinsci/configuration-as-code-plugin/blob/master/README.md)
 * [Jenkinsfile Documentation](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/)
 * [Jenkins Configuration as Code local reference](http://localhost:8080/configuration-as-code/reference)

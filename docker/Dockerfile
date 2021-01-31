@@ -1,4 +1,4 @@
 FROM jenkins/jenkins:2.263.1-lts
-ENV JAVA_OPTS='-Xmx600m'
+COPY init.groovy.d/ /usr/share/jenkins/ref/init.groovy.d/
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN set -x && jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
