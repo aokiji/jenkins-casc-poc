@@ -28,6 +28,7 @@ The directory [config/jcasc](./config/jcasc) contains several file configuring d
 * [nodes.yaml](./config/jcasc/nodes.yaml): define jenkins nodes
 * [jobs.yaml](./config/jobs.yaml): jobs definition
 * [security.yaml](./config/security.yaml): security settings
+* [misc.yaml](./config/misc.yaml): other plugin configuration
 
 These files are added to jenkins server container at `/etc/jenkins/config/jcasc/` as set by `CASC_JENKINS_CONFIG` environment variable
 
@@ -36,6 +37,10 @@ These files are added to jenkins server container at `/etc/jenkins/config/jcasc/
 Jobs are loaded through a seed job defined in [jobs.yaml](./config/jobs.yaml) that dynamically generates all other jobs. These jobs are defined in [jobs folder](./config/jobs) in a series of groovy scripts
 
 When starting jenkins the seed job is automatically launched as defined in [seed.groovy](./docker/init.groovy.d/seed.groovy)
+
+### Pipeline library
+
+A pipeline library is available globally. This pipeline library is defined in this [repository](https://github.com/aokiji/jenkins-casc-poc-library)
 
 # Resources
 

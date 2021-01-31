@@ -1,0 +1,12 @@
+unclassified:
+  globalLibraries:
+    libraries:
+    - name: "pipeline-library"
+      defaultVersion: "master"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              remote: "https://github.com/aokiji/jenkins-casc-poc-library"
+              traits:
+                - "gitBranchDiscovery"

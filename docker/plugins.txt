@@ -5,4 +5,5 @@ job-dsl
 rebuild
 workflow-job
 workflow-cps
+workflow-cps-global-lib
 workflow-aggregator
