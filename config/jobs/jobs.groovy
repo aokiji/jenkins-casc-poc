@@ -21,4 +21,4 @@ def CreatePipelineJob(Map params) {
 }
 
 CreatePipelineJob(name: 'example', repository: 'jenkins-casc-poc-project')
-CreatePipelineJob(name: 'example-2', repository: 'jenkins-casc-poc-project', branches: 'example-branch')
+CreatePipelineJob(name: 'example-dev', repository: 'jenkins-casc-poc-project', branches: 'dev')
