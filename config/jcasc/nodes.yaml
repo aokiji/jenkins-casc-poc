@@ -11,3 +11,14 @@ jenkins:
               failIfWorkDirIsMissing: false
               internalDir: "remoting"
               workDirPath: "/tmp"
+    - permanent:
+        name: agent2
+        labelString: other
+        remoteFS: /home/jenkins
+        launcher:
+          jnlp:
+            workDirSettings:
+              disabled: true
+              failIfWorkDirIsMissing: false
+              internalDir: "remoting"
+              workDirPath: "/tmp"
