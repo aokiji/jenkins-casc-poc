@@ -6,13 +6,7 @@ $ docker-compose up
 
 and go to http://localhost:8080 in browser
 
-this starts up a jenkins server and a jenkins agent
-
-if you wish to run it with a couple of agents
-
-```
-$  docker-compose -f docker-compose.yml -f docker/docker-compose.with-agent1.yml -f docker/docker-compose.with-agent2.yml up
-```
+this starts up a jenkins server and a couple of jenkins agents
 
 # Configuration
 
