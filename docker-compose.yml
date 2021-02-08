@@ -16,6 +16,18 @@ services:
       nofile:
         soft: 122880
         hard: 122880
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-oss:7.12.8
+    volumes:
+      - "artifactory_data:/var/opt/jfrog/artifactory"
+    ports:
+      - 8081:8081
+      - 8082:8082
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 32000
+        hard: 40000
   agent1:
     build:
       dockerfile: agent.Dockerfile
@@ -48,3 +60,4 @@ volumes:
   jenkins_home:
   agent1-workdir:
   agent2-workdir:
+  artifactory_data:

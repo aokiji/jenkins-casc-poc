@@ -10,3 +10,10 @@ unclassified:
               remote: "https://github.com/aokiji/jenkins-casc-poc-library"
               traits:
                 - "gitBranchDiscovery"
+  artifactoryBuilder:
+    artifactoryServers:
+    - artifactoryUrl: "http://artifactory:8082/artifactory"
+      serverId: "artifactory"
+      deployerCredentialsConfig:
+        username: "admin"
+        password: "{AQAAABAAAAAQlET4ykOc1OF/Wba9nHXp/REUkMo4iGoZeMB9Vo8hBgU=}"

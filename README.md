@@ -8,6 +8,36 @@ and go to http://localhost:8080 in browser
 
 this starts up a jenkins server and a couple of jenkins agents
 
+then go to http://localhost:8082 and setup jfrog artifactory. Change admin password to "Admin1234"
+
+# The Stack
+
+The service has the following components:
+
+* jenkins server
+* jenkins agent1
+* jenkins agent2
+* jfrog artifactory oss
+
+## Jenkins Server
+
+The jenkins server is the one orchestrating the jobs running in the CI.
+
+You can access the service at http://localhost:8080
+
+By default 2 users are configured:
+
+* admin: administrator user (password is admin)
+* user: common user (password is user)
+
+## JFrog Artifactory OSS
+
+This is the artifactory server
+
+You can access this service at http://localhost:8082
+
+Remember to setup admin password to Admin1234, for now this is not done automatically
+
 # Configuration
 
 ## Plugins

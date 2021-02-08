@@ -8,3 +8,4 @@ workflow-cps
 workflow-cps-global-lib
 workflow-aggregator
 xunit
+artifactory
