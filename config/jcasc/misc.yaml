@@ -17,3 +17,11 @@ unclassified:
       deployerCredentialsConfig:
         username: "admin"
         password: "{AQAAABAAAAAQlET4ykOc1OF/Wba9nHXp/REUkMo4iGoZeMB9Vo8hBgU=}"
+  email-ext:
+    mailAccount:
+      smtpHost: mail-server
+      smtpPort: 1025
+    defaultSuffix: "@example.com"
+  location:
+    adminAddress: "jenkins@example.com"
+    url: "http://localhost:8080/"

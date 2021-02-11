@@ -18,6 +18,7 @@ The service has the following components:
 * jenkins agent1
 * jenkins agent2
 * jfrog artifactory oss
+* mail server
 
 ## Jenkins Server
 
@@ -37,6 +38,12 @@ This is the artifactory server
 You can access this service at http://localhost:8082
 
 Remember to setup admin password to Admin1234, for now this is not done automatically
+
+## Mail Server
+
+a test mail server with a web UI so you can inspect mail send through the server
+
+You can access the ui at http://localhost:8025
 
 # Configuration
 

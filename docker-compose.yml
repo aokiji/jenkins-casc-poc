@@ -56,6 +56,10 @@ services:
       JENKINS_AGENT_NAME: agent2
     depends_on:
       - jenkins
+  mail-server:
+    image: mailhog/mailhog:v1.0.1
+    ports:
+      - 8025:8025
 volumes:
   jenkins_home:
   agent1-workdir:

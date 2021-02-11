@@ -9,3 +9,4 @@ workflow-cps-global-lib
 workflow-aggregator
 xunit
 artifactory
+email-ext
